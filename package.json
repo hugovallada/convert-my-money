@@ -1,0 +1,16 @@
+{
+  "name": "convert-my-money",
+  "version": "1.0.0",
+  "description": "Conversor de dólares para reais",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugo Vallada",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
