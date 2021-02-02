@@ -6,6 +6,8 @@ const app = express();
 app.set("view engine", "ejs");
 app.set("views", path.join(path.dirname("."), "views"));
 
+app.use(express.static(path.join(path.dirname("."), 'public')))
+
 app.get("/", (req, res) => {
   res.render("home");
 });
