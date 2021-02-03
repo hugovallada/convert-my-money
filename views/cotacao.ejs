@@ -1,0 +1,9 @@
+<%-include ('header') %>
+<div class="result">
+    <% if (error) { %>
+    <%= error %>
+    <% } else { %>
+    <p>O valor: <%= quantidade %> na cotação de: <%= cotacao %> gera um valor convertido de: R$ <%= valorConvertido %> reais</p>
+    <% } %>
+</div>
+<%-include ('footer') %>
