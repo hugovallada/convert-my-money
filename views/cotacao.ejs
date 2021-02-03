@@ -3,7 +3,10 @@
     <% if (error) { %>
     <%= error %>
     <% } else { %>
-    <p>O valor: <%= quantidade %> na cotação de: <%= cotacao %> gera um valor convertido de: R$ <%= valorConvertido %> reais</p>
+    <p>O valor de $ <%= quantidade %> dólares na cotação de: R$ <%= cotacao %> reais, gera um valor convertido de R$ <%= valorConvertido %> reais</p>
     <% } %>
 </div>
+<br>
+<br>
+<a href="/" class="link-btn">Nova Conversão</a>
 <%-include ('footer') %>

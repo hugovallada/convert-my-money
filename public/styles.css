@@ -23,7 +23,18 @@ button {
 }
 
 .result {
-    padding: 10px;
-    border: 1px solid #d8d8d8;
-    background: #fdfdfd;
+  padding: 10px;
+  border: 1px solid #d8d8d8;
+  background: #d6d4d4;
+}
+
+.link-btn {
+  border: 1px solid #000;
+  width: 200px;
+  background-color: #25157c;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 100px;
+  border-radius: 5px;
+  color: #fff;
 }
