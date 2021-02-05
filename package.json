@@ -11,6 +11,7 @@
   "author": "Hugo Vallada",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
     "ejs": "^3.1.5",
     "express": "^4.17.1"
   },

@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import { conversao, toMoney } from "./lib/convert.js";
+import { getCotacao, getCotacaoAPI, extractCotacao } from "./lib/bcb.js";
 
 const app = express();
 
@@ -9,8 +10,11 @@ app.set("views", path.join(path.dirname("."), "views"));
 
 app.use(express.static(path.join(path.dirname("."), "public")));
 
-app.get("/", (req, res) => {
-  res.render("home");
+app.get("/", async (req, res) => {
+  const cotacao = await getCotacao();
+  res.render("home", {
+    cotacao,
+  });
 });
 
 app.get("/cotacao", (req, res) => {
